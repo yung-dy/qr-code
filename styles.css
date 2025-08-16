@@ -9,6 +9,7 @@
     --radius2: 1rem;
     --radius3: 0.65rem;
     --color4: hsl(216, 15%, 48%);
+    --color5: rgb(4, 105, 138);
 }
 
 * {
@@ -20,7 +21,7 @@
 body {
     background-color: var(--background-color);
     font-family: var(--font-family);
-    font-size: 14px;
+    font-size: 0.875rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +31,7 @@ body {
 }
 
 .container {
-    max-width: 300px;
+    max-width: 21rem;
     background-color: var(--color);
     border-radius: var(--radius3);
     padding: var(--radius3);
@@ -47,12 +48,12 @@ img {
 
 .container main {
     text-align: center;
-    padding: 0 var(--radius1);
+    padding: 0 var(--radius);
 }
 
-.container main h2 {
-    margin-top: var(--radius2);
-    font-size: 20px;
+.container main h1 {
+    margin-block-start: var(--radius2);
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--color2);
 }
@@ -60,7 +61,7 @@ img {
 .container main p {
     margin: var(--radius2) 0 var(--radius1);
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--color4);
 }
 
@@ -71,28 +72,24 @@ img {
     font-family: inherit;
 }
 
-.attribution p:first-child {
-    margin-top: var(--radius2);
-}
-
-.attribution p:last-child {
-    margin-top: var(--radius2);
+.attribution p {
+    margin-block-start: var(--radius2);
 }
 
 .attribution p a {
     text-decoration: none;
-    color: rgb(4, 105, 138);
+    color: var(--color5);
 }
 
 .attribution p a:hover {
-    color: rgb(255, 255, 255);
+    color: var(--color);
     background-color: rgb(19, 77, 201);
     padding: 0.3rem;
     transition: 0.5s ease;
     border-radius: var(--radius3);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
         .attribution {
         display: flex;
         flex-direction: row;
@@ -102,6 +99,15 @@ img {
     }
 
     .attribution p:first-child {
-        margin-right: var(--radius1);
+        margin-inline-end: var(--radius1);
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none;
+        transition: none;
+        scroll-behavior: auto;
+    }
+}
+
