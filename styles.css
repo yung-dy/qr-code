@@ -7,6 +7,7 @@
     --radius: 2rem;
     --radius1: 1.5rem;
     --radius2: 1rem;
+    --radius3: 0.65rem;
     --color4: hsl(216, 15%, 48%);
 }
 
@@ -29,14 +30,14 @@ body {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 300px;
     background-color: var(--color);
-    border-radius: var(--radius2);
-    padding: var(--radius2);
+    border-radius: var(--radius3);
+    padding: var(--radius3);
 }
 
 .container header img {
-    border-radius: var(--radius2);
+    border-radius: var(--radius3);
 }
 
 img {
@@ -79,9 +80,13 @@ img {
 
 .attribution p a {
     text-decoration: none;
+    color: rgb(4, 105, 138);
 }
 
 .attribution p a:hover {
-    color: rgb(0, 72, 253);
-    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 77, 201);
+    padding: 0.3rem;
+    transition: 0.5s ease;
+    border-radius: var(--radius3);
 }
