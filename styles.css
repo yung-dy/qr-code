@@ -36,12 +36,13 @@ body {
     padding: var(--radius3);
 }
 
-.container header img {
-    border-radius: var(--radius3);
-}
-
 img {
     max-width: 100%;
+    transition: 1s;
+}
+
+.container header img {
+    border-radius: var(--radius3);
 }
 
 .container main {
@@ -89,4 +90,18 @@ img {
     padding: 0.3rem;
     transition: 0.5s ease;
     border-radius: var(--radius3);
+}
+
+@media (min-width: 1024px) {
+        .attribution {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        font-family: inherit;
+        font-size: x-small;
+    }
+
+    .attribution p:first-child {
+        margin-right: var(--radius1);
+    }
 }
