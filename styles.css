@@ -1,11 +1,13 @@
 :root {
     --background-color: hsl(212, 45%, 89%);
+    --color2: hsl(218, 44%, 22%);
     --font-family: "Outfit", sans-serif;
     --color: #fff;
     --width: 700px;
     --radius: 2rem;
     --radius1: 1.5rem;
-    --radius2: 1rem
+    --radius2: 1rem;
+    --color4: hsl(216, 15%, 48%);
 }
 
 * {
@@ -50,12 +52,14 @@ img {
     margin-top: var(--radius2);
     font-size: 20px;
     font-weight: 700;
+    color: var(--color2);
 }
 
 .container main p {
     margin: var(--radius2) 0 var(--radius1);
     line-height: 1.5;
     font-size: 14px;
+    color: var(--color4);
 }
 
 .attribution {
