@@ -47,5 +47,37 @@ img {
 
 .container main h2 {
     margin-top: var(--radius1);
-    font-size: 2rem;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.container main p {
+    margin-top: var(--radius1);
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+}
+
+.attribution p:first-child {
+    margin-top: var(--radius2);
+}
+
+.attribution p:last-child {
+    margin-top: var(--radius2);
+}
+
+.attribution p a {
+    text-decoration: none;
+}
+
+.attribution p a:hover {
+    color: blueviolet;
+    text-transform: uppercase;
 }
