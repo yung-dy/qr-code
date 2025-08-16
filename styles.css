@@ -43,6 +43,7 @@ img {
 
 .container main {
     text-align: center;
+    padding: 0 var(--radius1);
 }
 
 .container main h2 {
@@ -52,7 +53,7 @@ img {
 }
 
 .container main p {
-    margin-top: var(--radius2);
+    margin: var(--radius2) 0 var(--radius1);
     line-height: 1.5;
     font-size: 14px;
 }
